@@ -79,3 +79,23 @@ https://discord.com/channels/589829547667619852/901168147934117888/9113527589369
 4. (0) is the comma and rules from previous parts apply.
 
 Note that z can only contain zeroes and seperators. 
+
+## Slash
+### Source
+https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455
+
+### Definition
+```
+[b#]x = "[b-1#]"^x x
+[Z0(c#)b@]x = [Z0(c-1#) "0(c-1#)"^x-1 b@]x
+[Z0(#c/0)b@]x = [Z0(#c)b@]x
+[Z[1]0(Z[2]c#)b]x = [Z[1]0(Z[2]c#)b...
+[Z0(#0/b...y/z@)1%]x = [Z0(#0(...(#1/b-1...y/z@)...)b...y/z@)%]x,  with x sets of parens. If it is (0/n,#) with # not having /, in which case the center is (0/n-1,#).
+```
+
+where:
+```
+Z = zero array, #@% are arrays
+For bcxyz, the output is always bigger than 0 
+```
+where: 
