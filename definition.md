@@ -98,4 +98,3 @@ where:
 Z = zero array, #@% are arrays
 For bcxyz, the output is always bigger than 0 
 ```
-where: 
