@@ -91,7 +91,7 @@ Amendment: Done on GitHub, with the branch `slash_amendment` with PR#3
 [Z0(c#)b@]x = [Z0(c-1#) "0(c-1#)"^x-1 b@]x
 [Z0(#c/0)b@]x = [Z0(#c)b@]x
 [Z[1]0(Z[2]c#)b]x = [Z[1]0(Z[2]c#)b...
-[Z0(Z'0/b...y/z@)1%]x = [Z0(Z'0(...(Z'1/b-1...y/z@)...)b...y/z@)%]x,  with x sets of parens. If it is (0/n,Z') with Z' not having /, in which case the center is (0/n-1,Z').
+[Z0(Z'0/b...y/z@)1%]x = [Z0(Z'0(...(Z'1/b-1...y/z@)...)b...y/z@)%]x,  with x sets of parens.
 ```
 
 where:
