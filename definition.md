@@ -88,7 +88,7 @@ Amendment: Done on GitHub, with the branch `slash_amendment` with PR#3
 ### Definition
 ```
 [b#]x = "[b-1#]"^x x
-[Z0(c#)b@]x = [Z0(c-1#) "0(c-1#)"^x-1 b@]x
+[Z0(c#)b@]x = [Z "0(c-1#)"^x 1 (c#) b-1 @]10
 [Z0(#c/0)b@]x = [Z0(#c)b@]x
 [Z[1]0(Z[2]c#)b]x = [Z[1]0(Z[2]c#)b...
 [Z0(Z'0/b...y/z@)1%]x = [Z0(Z'0(...(Z'1/b-1...y/z@)...)b...y/z@)%]x,  with x sets of parens.
