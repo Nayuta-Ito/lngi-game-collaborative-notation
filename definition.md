@@ -24,7 +24,7 @@ c(a) = (10)bb...bb (with a b's)
 ### Source
 https://discord.com/channels/589829547667619852/589939910442614795/697223684976279552
 ### Definition
-d(x)=c(c(...(x)...)))
+d(x)=c(c(...(10)...)))
 
 ## The dawn of arrays
 ### Source
@@ -87,7 +87,7 @@ Amendment: Done on GitHub, with the branch `slash_amendment` with PR#3
 Revision: Done on Github
 
 ### Definition
-```
+
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)a #]x = [z "0(b-1 @)"^x 1(b @)a-1 #]10
 3. When we have [z(y 0/b @)a...]n, it becomes [z Xₙ 1(y 0/b @)a-1...]10, where
@@ -99,25 +99,25 @@ Revision: Done on Github
 where:
 x, y and z are zero arrays, # and @ are arrays, and
 the values of a, b, and c are all bigger than zero.
-```
+
 
 ## Dimensional slash
 ### Source
 Github, by solarzone
 
 ### Definition
-```
+
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)? a #]x = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
-3. When we have [z($ y 0/b &)a...]n, it becomes [z X<sub>n</sub> a...]10, where
+3. When we have [z(x y 0/b $)a...]n, it becomes [z X<sub>n</sub> a...]10, where
    3.1. $ and & are as short as possible
-   3.2. If y is empty, then X₀ = ($ (0/b)? &)
-   3.3. Otherwise X₀ = ($ (y 1/b-1)? &).
+   3.2. If y is empty, then X₀ = (x (0/b)? $)
+   3.3. Otherwise X₀ = (x (y 1/b-1)? $).
    3.4. To calculate Xₐ,
-      3.4.1. Start at the outermost level of ($ y 0/b &), so we have (Z 0(@)? a #). Change this to (Z 0(@)? 1 (@)? a-1 #).
+      3.4.1. Start at the outermost level of (x y 0/b $), so we have (Z 0(@)? a #). Change this to (Z 0(@)? 1 (@)? a-1 #).
       3.4.2. Then, jump into (@) and do it again. Do this until we reach (Z 0/a #), at which point stop.
-      3.4.3. Then we have ($' y 0/b &'), for some $' and &'. Xₐ = ($' y 0 Xₐ₋₁ 1/b-1 &').
-4. When we have [z 0(0#)? a @]n, then change it to [z 0**(0#)? **1(0#)? a-1 @]n and jump into the bolded separator.
+      3.4.3. Then we have (x' y 0/b $'), for some x' and $'. Xₐ = (x' y 0 Xₐ₋₁ 1/b-1 $').
+4. When we have [z 0(0#)? a @]n, then change it to [z 0**(0#)?**1(0#)? a-1 @]n and jump into the bolded separator.
 
 where:
 The / separator is an abbreviation for (0)/,
