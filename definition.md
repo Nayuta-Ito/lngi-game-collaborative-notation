@@ -90,10 +90,10 @@ Revision: Done on Github
 
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)a #]x = [z "0(b-1 @)"^x 1(b @)a-1 #]10
-3. When we have [z(y 0/b @)a...]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1...]10, where
-   3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)
-   3.2. Otherwise X<sub>0</sub> = (y/1/b-1).
-   3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).
+3. When we have [z(y 0/b @)a...]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1...]10, where  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Otherwise X<sub>0</sub> = (y/1/b-1).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).  
 4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
 
 where:  
