@@ -82,9 +82,9 @@ Note that z can only contain zeroes and seperators.
 
 ## Slash
 ### Source
-https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455
-Amendment: Done on GitHub, with the branch `slash_amendment` with PR#3
-Revision: Done on Github
+https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455  
+Amendment: Done on GitHub, with the branch `slash_amendment` (PR#3)
+Revision: Done on Github, with the branch `dimensional slash` (PR#5)
 
 ### Definition
 
@@ -103,7 +103,7 @@ the values of a, b, and c are all bigger than zero.
 
 ## Dimensional slash
 ### Source
-Github, by solarzone
+Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
 
 ### Definition
 
