@@ -74,11 +74,11 @@ https://discord.com/channels/589829547667619852/901168147934117888/9113527589369
 
 ### Definition
 1. [z(b+1,#)a+1...]n (where # represents the rest of the dimensional seperator or can be empty) = [z(b,#)0(b,#)...0(b,#)0(b,#)1(b+1,#)a...]10 with n (b,#)'s
-2. [...(A)z(B)a...]n = [...(B)a...] if the level of A is less than the level of B.
+2. [y(A)z(B)a...]n = [y(B)a...] if the level of A is less than the level of B.
 3. If a seperator begins with 0 and has more than 1 entry, jump into it and set n to the n of the main array.
 4. (0) is the comma and rules from previous parts apply.
 
-Note that z can only contain zeroes and seperators. 
+Note that y and z can only contain zeroes and separators (in y sometimes parts of them.)
 
 ## Slash
 ### Source
@@ -88,8 +88,8 @@ Revision: Done on Github, with the branch `dimensional slash` (PR#5)
 
 ### Definition
 
-1. [a#]x = "[a-1 #]"^x 10
-2. [z 0(b@)a #]x = [z "0(b-1 @)"^x 1(b @)a-1 #]10
+1. [a#]n = "[a-1 #]"^n 10
+2. [z 0(b@)a #]n = [z "0(b-1 @)"^n 1(b @)a-1 #]10
 3. When we have [z(y 0/b @)a #]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1 #]10, where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Otherwise X<sub>0</sub> = (y/1/b-1).  
@@ -107,8 +107,8 @@ Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
 
 ### Definition
 
-1. [a#]x = "[a-1 #]"^x 10
-2. [z 0(b@)? a #]x = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
+1. [a#]n = "[a-1 #]"^n 10
+2. [z 0(b@)? a #]n = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
 3. When we have [z(x y 0/b <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x y 0/b <span>$</span>) a-1 #]10, where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x' and <span>$</span> are as short as possible  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b)? <span>$</span>)  
@@ -121,6 +121,6 @@ Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
 
 where:  
 The / separator is an abbreviation for (0)/,  
-x, y and z are zero arrays, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
+x, y and z are zero arrays or strings, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
 ? is either empty or /, and the values of a, b, and c are all bigger than zero.
 
