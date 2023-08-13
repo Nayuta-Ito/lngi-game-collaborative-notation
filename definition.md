@@ -94,7 +94,7 @@ Revision: Done on Github
    3.1. If y is empty, then X₀ = (0/b-1 @)
    3.2. Otherwise X₀ = (y/1/b-1).
    3.3. Xₐ = (x/0 Xₐ₋₁ 1/b-1).
-4. When we have [z 0(0#)a @]n, then change it to [z 0**(0#)**1(0#)a-1 @]n and jump into the bolded separator.
+4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
 
 where:
 x, y and z are zero arrays, # and @ are arrays, and
