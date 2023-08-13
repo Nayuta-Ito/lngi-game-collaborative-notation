@@ -90,7 +90,7 @@ Revision: Done on Github
 
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)a #]x = [z "0(b-1 @)"^x 1(b @)a-1 #]10
-3. When we have [z(y 0/b @)a...]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1...]10, where  
+3. When we have [z(y 0/b @)a #]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1 #]10, where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Otherwise X<sub>0</sub> = (y/1/b-1).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).  
@@ -109,7 +109,7 @@ Github, by solarzone
 
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)? a #]x = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
-3. When we have [z(x y 0/b <span>$</span>)a...]n, it becomes [z X<sub>n</sub> 1 (x y 0/b <span>$</span>) a-1...]10, where  
+3. When we have [z(x y 0/b <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x y 0/b <span>$</span>) a-1 #]10, where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x' and <span>$</span> are as short as possible  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b)? <span>$</span>)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1)? <span>$</span>).  
