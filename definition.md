@@ -96,7 +96,7 @@ Revision: Done on Github
    3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).
 4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
 
-where:
+where:  
 x, y and z are zero arrays, # and @ are arrays, and
 the values of a, b, and c are all bigger than zero.
 
@@ -119,7 +119,7 @@ Github, by solarzone
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' y 0/b <span>$</span>'), for some x' and <span>$</span>'. Xₐ = (x' y 0 X<sub>a-1</sub> 1/b-1 <span>$</span>').  
 4. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
 
-where:
+where:  
 The / separator is an abbreviation for (0)/,  
 x, y and z are zero arrays, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
 ? is either empty or /, and the values of a, b, and c are all bigger than zero.
