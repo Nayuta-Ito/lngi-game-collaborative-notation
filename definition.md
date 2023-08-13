@@ -90,10 +90,10 @@ Revision: Done on Github
 
 1. [a#]x = "[a-1 #]"^x 10
 2. [z 0(b@)a #]x = [z "0(b-1 @)"^x 1(b @)a-1 #]10
-3. When we have [z(y 0/b @)a...]n, it becomes [z Xₙ 1(y 0/b @)a-1...]10, where
-   3.1. If y is empty, then X₀ = (0/b-1 @)
-   3.2. Otherwise X₀ = (y/1/b-1).
-   3.3. Xₐ = (x/0 Xₐ₋₁ 1/b-1).
+3. When we have [z(y 0/b @)a...]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1...]10, where
+   3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)
+   3.2. Otherwise X<sub>0</sub> = (y/1/b-1).
+   3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).
 4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
 
 where:
@@ -111,12 +111,12 @@ Github, by solarzone
 2. [z 0(b@)? a #]x = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
 3. When we have [z(x y 0/b <span>$</span>)a...]n, it becomes [z X<sub>n</sub> a...]10, where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. $ and & are as short as possible  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X₀ = (x (0/b)? <span>$</span>)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X₀ = (x (y 1/b-1)? <span>$</span>).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4. To calculate Xₐ,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b)? <span>$</span>)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1)? <span>$</span>).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4. To calculate X<sub>a</sub>,  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. Start at the outermost level of (x y 0/b <span>$</span>), so we have (Z 0(@)? a #). Change this to (Z 0(@)? 1 (@)? a-1 #).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2. Then, jump into (@) and do it again. Do this until we reach (Z 0/a #), at which point stop.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' y 0/b <span>$</span>'), for some x' and <span>$</span>'. Xₐ = (x' y 0 Xₐ₋₁ 1/b-1 <span>$</span>').  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' y 0/b <span>$</span>'), for some x' and <span>$</span>'. Xₐ = (x' y 0 X<sub>a-1</sub> 1/b-1 <span>$</span>').  
 4. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
 
 where:
