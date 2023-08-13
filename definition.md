@@ -117,10 +117,10 @@ Github, by solarzone
       3.4.1. Start at the outermost level of (x y 0/b &36;), so we have (Z 0(@)? a #). Change this to (Z 0(@)? 1 (@)? a-1 #).
       3.4.2. Then, jump into (@) and do it again. Do this until we reach (Z 0/a #), at which point stop.
       3.4.3. Then we have (x' y 0/b &36;'), for some x' and &36;'. Xₐ = (x' y 0 Xₐ₋₁ 1/b-1 &36;').
-4. When we have [z 0(0#)? a @]n, then change it to [z 0**(0#)?**1(0#)? a-1 @]n and jump into the bolded separator.
+4. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
 
 where:
 The / separator is an abbreviation for (0)/,
 x, y and z are zero arrays, # and @ are arrays, &36; and &36;' are strings,
 ? is either empty or /, and the values of a, b, and c are all bigger than zero.
-```
+
