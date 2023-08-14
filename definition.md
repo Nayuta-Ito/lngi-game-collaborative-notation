@@ -108,19 +108,21 @@ Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
 ### Definition
 
 1. [a#]n = "[a-1 #]"^n 10
-2. [z 0(b@)? a #]n = [z "0 (b-1 @)?"^x 1 (b @)? a-1 #]10
-3. When we have [z(x y 0/b <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x y 0/b <span>$</span>) a-1 #]10, where  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x' and <span>$</span> are as short as possible  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b)? <span>$</span>)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1)? <span>$</span>).  
+2. [z 0(b@)? a #]n = [z "0 (b-1 @)?"^n 1 (b @)? a-1 #]10
+3. When we have [z(x (y 0/b @)? <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x (y 0/b @)? <span>$</span>) a-1 #]10, where  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x, y and <span>$</span> are as short as possible
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. If ? is empty, then x and $ are empty, and any ((...)) becomes (...).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b-1 @)? <span>$</span>)  .
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1 @)? <span>$</span>).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4. To calculate X<sub>a</sub>,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. Start at the outermost level of (x y 0/b <span>$</span>), so we have (Z 0(@)? c #). Change this to (Z 0(@)? 1 (@)? c-1 #).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2. Then, jump into (@) and do it again. Do this until we reach (Z 0/b #), at which point stop.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' y 0/b <span>$</span>'), for some x' and <span>$</span>'. X<sub>a</sub> = (x' y 0 X<sub>a-1</sub> 1/b-1 <span>$</span>').  
-4. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. Start at the outermost level of (x (y 0/b @)? <span>$</span>), so we have (x 0(@)? c #). Change this to (x 0(@)? 1 (@)? c-1 #).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2. Then, jump into (@) and do it again. Do this until we reach (y 0/b @)?, at which point stop.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' (y 0/b)? <span>$</span>'), for some x' and <span>$</span>'. X<sub>a</sub> = (x' (y 0 X<sub>a-1</sub> 1/b-1)? <span>$</span>').  
+5. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
 
 where:  
 The / separator is an abbreviation for (0)/,  
 x, y and z are zero arrays or strings, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
 ? is either empty or /, and the values of a, b, and c are all bigger than zero.
+
 
