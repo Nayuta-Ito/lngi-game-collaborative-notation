@@ -110,9 +110,9 @@ Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
 1. [a#]n = "[a-1 #]"^n 10
 2. [z 0(b@)? a #]n = [z "0 (b-1 @)?"^n 1 (b @)? a-1 #]10
 3. When we have [z(x (y 0/b @)? <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x (y 0/b @)? <span>$</span>) a-1 #]10, where  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x, y and <span>$</span> are as short as possible
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. If ? is empty, then x and $ are empty, and any ((...)) becomes (...).
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b-1 @)? <span>$</span>)  .
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x, y and <span>$</span> are as short as possible  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. If ? is empty, then x and $ are empty, and any ((...)) becomes (...).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b-1 @)? <span>$</span>).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1 @)? <span>$</span>).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4. To calculate X<sub>a</sub>,  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. Start at the outermost level of (x (y 0/b @)? <span>$</span>), so we have (x 0(@)? c #). Change this to (x 0(@)? 1 (@)? c-1 #).  
