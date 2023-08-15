@@ -103,7 +103,7 @@ the values of a, b, and c are all bigger than zero.
 
 ## Dimensional slash
 ### Source
-Done on Github, by solarzone with the branch `dimensional slash` (PR#5)
+Done on Github, by solarzone with the branch `solarzone1010:main` (PR#5)
 
 ### Definition
 
