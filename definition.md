@@ -84,7 +84,7 @@ Note that y and z can only contain zeroes and separators (in y sometimes parts o
 ### Source
 https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455  
 Amendment: Done on GitHub, with the branch `slash_amendment` (PR#3)
-Revision: Done on Github, with the branch `dimensional slash` (PR#5)
+Revision: Done on Github, with the branch `solarzone1010:main` (PR#5)
 
 ### Definition
 
