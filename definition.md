@@ -24,35 +24,35 @@ c(a) = (10)bb...bb (with a b's)
 ### Source
 https://discord.com/channels/589829547667619852/589939910442614795/697223684976279552
 ### Definition
-d(x)=c(c(...(x)...)))
+d(x)=c(c(...(10)...)))
 
-## The dawn of array
+## The dawn of arrays
 ### Source
 https://discord.com/channels/589829547667619852/589939910442614795/703151445775745026
 ### Definition
-[x]y where [1]y = ay, [2]y = by, [3]y = cy, and [x+1]y = [x][x][x]...[x]y (with y x's)
+[x]y where [1]y = ay, [2]y = by, [3]y = cy, and [x+1]y = [x][x][x]...[x]10 (with y x's)
 
-## 2 entries Part 1
+## 2 entries I
 ### Source
 https://discord.com/channels/589829547667619852/594679014703235072/828287186653937665
 ### Definition
-[0,1]n =[n]n
+[0,1]n =[n]10
 
-## 2 entries Part 2
+## 2 entries II
 ### Source
 https://discord.com/channels/589829547667619852/594679014703235072/838499801188270101
 (and a few later posts)
 ### Definition
-[n,1]m = [n-1,1]^m m for any integers n>=1 and m>=1
+[n,1]m = [n-1,1]^m 10 for any integers n>=1 and m>=1
 
-## 2 entries Part 3
+## 2 entries III
 ### Source
 https://discord.com/channels/589829547667619852/594679014703235072/840362470346063872
 
 ### Definition
-[0,m]n = [n,m-1]
+[0,m]n = [n,m-1]10
 
-## 3+ linear entries
+## Linear
 ### Source
 https://discord.com/channels/589829547667619852/594679014703235072/850792842707206145
 https://discord.com/channels/589829547667619852/594679014703235072/850805890705653800
@@ -64,38 +64,62 @@ https://discord.com/channels/589829547667619852/594679014703235072/8509560343903
 Once we reach the limit of two entries, can we expand this notation to 3+ entires in the following:
 z represents an empty array or 1 or more zeroes.
 \# can be anything
-[z,0,a+1,#]n = [z,n,a,#]n
-[a+1,#]n = [a,#]^n(n)
+[z,0,a+1,#]n = [z,n,a,#]10
+[a+1,#]n = [a,#]^n 10
 [#,z]n = [#]n
 
-## Nested array definition
+## Dimensional
 ### Source
 https://discord.com/channels/589829547667619852/901168147934117888/911352758936961034
 
 ### Definition
-1. [z(b+1,#)a+1...]n (where # represents the rest of the dimensional seperator or can be empty) = [z(b,#)0(b,#)...0(b,#)0(b,#)1(b+1,#)a...]n with n (b,#)'s
-2. [...(A)z(B)a...]n = [...(B)a...] if the level of A is less than the level of B.
-3. if a seperator begins with 0 and has more than 1 entry, jump into it and set n to the n of the main array.
+1. [z(b+1,#)a+1...]n (where # represents the rest of the dimensional seperator or can be empty) = [z(b,#)0(b,#)...0(b,#)0(b,#)1(b+1,#)a...]10 with n (b,#)'s
+2. [y(A)z(B)a...]n = [y(B)a...] if the level of A is less than the level of B.
+3. If a seperator begins with 0 and has more than 1 entry, jump into it and set n to the n of the main array.
 4. (0) is the comma and rules from previous parts apply.
 
-Note that z can only contain zeroes and seperators. 
+Note that y and z can only contain zeroes and separators (in y sometimes parts of them.)
 
 ## Slash
 ### Source
-https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455
-Amendment: Done on GitHub, with the branch `slash_amendment` with PR#3
+https://discord.com/channels/589829547667619852/1000504288231043143/1071279268706914455  
+Amendment: Done on GitHub, with the branch `slash_amendment` (PR#3)
+Revision: Done on Github, with the branch `solarzone1010:main` (PR#5)
 
 ### Definition
-```
-[b#]x = "[b-1#]"^x x
-[Z0(c#)b@]x = [Z "0(c-1#)"^x 1 (c#) b-1 @]10
-[Z0(#c/0)b@]x = [Z0(#c)b@]x
-[Z[1]0(Z[2]c#)b]x = [Z[1]0(Z[2]c#)b...
-[Z0(Z'0/b...y/z@)1%]x = [Z0(Z'0(...(Z'1/b-1...y/z@)...)b...y/z@)%]x,  with x sets of parens.
-```
+1. [a#]n = "[a-1 #]"^n 10
+2. [z 0(b@)a #]n = [z "0(b-1 @)"^n 1(b @)a-1 #]10
+3. When we have [z(y 0/b @)a #]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1 #]10, where  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Otherwise X<sub>0</sub> = (y/1/b-1).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).  
+4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
 
-where:
-```
-Z,Z' = zero array, #@% are arrays
-For bcxyz, the output is always bigger than 0 
-```
+where:  
+x, y and z are zero arrays, # and @ are arrays, and
+the values of a, b, and c are all bigger than zero.
+
+
+## Dimensional slash
+### Source
+Done on Github, by solarzone with the branch `solarzone1010:main` (PR#5)
+
+### Definition
+
+1. [a#]n = "[a-1 #]"^n 10
+2. [z 0(b@)? a #]n = [z "0 (b-1 @)?"^n 1 (b @)? a-1 #]10
+3. When we have [z(x (y 0/b @)? <span>$</span>)a #]n, it becomes [z X<sub>n</sub> 1 (x (y 0/b @)? <span>$</span>) a-1 #]10, where  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. x, y and <span>$</span> are as short as possible  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1.1. If ? is empty, then x and $ are empty, and any ((...)) becomes (...).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. If y is empty, then X<sub>0</sub> = (x (0/b-1 @)? <span>$</span>).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Otherwise X<sub>0</sub> = (x (y 1/b-1 @)? <span>$</span>).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4. To calculate X<sub>a</sub>,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.1. Start at the outermost level of (x (y 0/b @)? <span>$</span>), so we have (x 0(@)? c #). Change this to (x 0(@)? 1 (@)? c-1 #).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.2. Then, jump into (@) and do it again. Do this until we reach (y 0/b @)?, at which point stop.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4.3. Then we have (x' (y 0/b)? <span>$</span>'), for some x' and <span>$</span>'. X<sub>a</sub> = (x' (y 0 X<sub>a-1</sub> 1/b-1)? <span>$</span>').  
+5. When we have [z 0(0#)? a @]n, then change it to \[z 0 **(0#)?** 1(0#)? a-1 @\]n and jump into the bolded separator.
+
+where:  
+The / separator is an abbreviation for (0)/,  
+x, y and z are zero arrays or strings, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
+? is either empty or /, and the values of a, b, and c are all bigger than zero.
