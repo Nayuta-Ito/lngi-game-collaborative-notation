@@ -87,7 +87,6 @@ Amendment: Done on GitHub, with the branch `slash_amendment` (PR#3)
 Revision: Done on Github, with the branch `solarzone1010:main` (PR#5)
 
 ### Definition
-
 1. [a#]n = "[a-1 #]"^n 10
 2. [z 0(b@)a #]n = [z "0(b-1 @)"^n 1(b @)a-1 #]10
 3. When we have [z(y 0/b @)a #]n, it becomes [z X<sub>n</sub> 1(y 0/b @)a-1 #]10, where  
@@ -124,5 +123,3 @@ where:
 The / separator is an abbreviation for (0)/,  
 x, y and z are zero arrays or strings, # and @ are arrays, <span>$</span> and <span>$</span>' are strings,  
 ? is either empty or /, and the values of a, b, and c are all bigger than zero.
-
-
