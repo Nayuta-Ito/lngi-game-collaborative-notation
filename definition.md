@@ -93,7 +93,7 @@ Revision: Done on Github, with the branch `solarzone1010:main` (PR#5)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1. If y is empty, then X<sub>0</sub> = (0/b-1 @)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Otherwise X<sub>0</sub> = (y/1/b-1).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.3. X<sub>a</sub> = (x/0 X<sub>a-1</sub> 1/b-1).  
-4. When we have [z 0(0\#)a @]n, then change it to [z 0**(0\#)**1(0\#)a-1 @]n and jump into the bolded separator.
+4. When we have [z 0(0\#)a @]n, then change it to [z 0 **(0\#)** 1(0\#)a-1 @]n and jump into the bolded separator.
 
 where:  
 x, y and z are zero arrays, # and @ are arrays, and
